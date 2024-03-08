@@ -12,6 +12,7 @@
 <table>
     <thead>
         <tr>
+            <th>ID</th>
             <th>Nom</th>
             <th>Cognom</th>
             <th>Info</th>
@@ -20,9 +21,10 @@
     <tbody>
         {% for alumno in alumnos %}
             <tr>
+                <td>{{ alumno.id }}</td>
                 <td>{{ alumno.name }}</td>
                 <td>{{ alumno.surname }}</td>
-                <td>{{ alumno.age }}</td>
+                <td>{{ alumno.email }}</td>
             </tr>
         {% endfor %}
     </tbody>
