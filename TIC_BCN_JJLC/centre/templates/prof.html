@@ -1,0 +1,26 @@
+{% extends 'index_centre.html' %}
+
+{% block content %}
+<h1>Informació professorat de ITICBCN</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Cognom</th>
+            <th>Email</th>
+            <th>Curs</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for alumno in alumnos %}
+            <tr>
+                <td>{{ alumno.name }}</td>
+                <td>{{ alumno.surname }}</td>
+                <td>{{ alumno.email }}</td>
+                <td>{{ alumno.curs }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
