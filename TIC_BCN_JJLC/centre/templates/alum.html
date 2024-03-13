@@ -1,35 +1,36 @@
 {% extends 'index_centre.html' %}
 
 {% block content %}
-<h1>Informació de alumnat ITICBCN</h1>
-<!-- <ul>
-    {% for alumno in alumnos %}
-    <li>Nom: {{alumno.name}}</li>
-    <li>Cognom: {{alumno.surname}}</li>
-    <li>Info: {{alumno.age}}</li>
-    {% endfor %}
-</ul> -->
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Cognom</th>
-            <th>Info</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="content">
+    <h1>Informació de alumnat ITICBCN</h1>
+    <!-- <ul>
         {% for alumno in alumnos %}
-            <tr>
-                <td>{{ alumno.id }}</td>
-                <td>{{ alumno.name }}</td>
-                <td>{{ alumno.surname }}</td>
-                <td>{{ alumno.email }}</td>
-                <td><a href="{% url 'info_alum' alumno.id %}">ver datos</a></td>
-            </tr>
+        <li>Nom: {{alumno.name}}</li>
+        <li>Cognom: {{alumno.surname}}</li>
+        <li>Info: {{alumno.age}}</li>
         {% endfor %}
-    </tbody>
-</table>
-<p><a href="{% url 'index' %}">Tornar enrere</a></p>  
-
+    </ul> -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for alumno in alumnos %}
+                <tr>
+                    <td>{{ alumno.id }}</td>
+                    <td>{{ alumno.name }}</td>
+                    <td>{{ alumno.surname }}</td>
+                    <td>{{ alumno.email }}</td>
+                    <td><a href="{% url 'info_alum' alumno.id %}">ver datos</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="{% url 'index' %}">Tornar enrere</a></p>  
+</div>
 {% endblock %}
