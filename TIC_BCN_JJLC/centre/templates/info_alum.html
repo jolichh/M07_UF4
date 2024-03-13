@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% for alumno in alumnos %}
+        <tr>
+            <td>{{ alumno.id }}</td>
+            <td>{{ alumno.name }}</td>
+            <td>{{ alumno.surname }}</td>
+            <td>{{ alumno.email }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+    
