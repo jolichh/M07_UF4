@@ -1,8 +1,9 @@
 {% extends 'index.html' %}
     {% block content %}
 
-    <h1>Benvinguts a ITICBCN_ de index_centre</h1>
+    <h1>Benvinguts a ITICBCN</h1>
     
-    <p><a href="/centre/alumnes/">Alumnes</a></p>    
-    <p><a href="/centre/profes/">Professors</a></p>
+    <p><a href="{% url 'alumnes' %}">Alumnes</a></p>    
+    <p><a href="{% url 'profes' %}">Professors</a></p>
+
     {% endblock %}

@@ -20,8 +20,10 @@
                 <td>{{ profe.surname }}</td>
                 <td>{{ profe.email }}</td>
                 <td>{{ profe.curs }}</td>
+                <td><a href="{% url 'info_prof' profe.id %}">ver datos</a></td>
             </tr>
         {% endfor %}
     </tbody>
 </table>
+<p><a href="{% url 'index' %}">Tornar enrere</a></p>  
 {% endblock %}

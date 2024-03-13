@@ -20,7 +20,7 @@ alum = [{"id":"1","name":"Joana","surname":"Lin", "email":"2023_joana.lin@iticbc
             {"id":"17","name":"Dinar","surname":"Khazimullin", "email":"2023_dinar.khazimullin@iticbcn.cat"},
             ]
 
-profes = [{"id":"1", "name":"Roger","surname":"Sobrino", "email":"roger.sobrino@iticbcn.cat", "curs":"DAW i DAM"},
+prof = [{"id":"1", "name":"Roger","surname":"Sobrino", "email":"roger.sobrino@iticbcn.cat", "curs":"DAW i DAM"},
               {"id":"2", "name":"Juanma","surname":"Sanchez", "email":"juanma.sanchez@iticbcn.cat", "curs":"DAW i DAM"},
               {"id":"3", "name":"Xavi","surname":"Sobrino", "email":"xavi_quesada@iticbcn.cat", "curs":"DAW i DAM"},
               {"id":"4", "name":"Oriol","surname":"Sobrino", "email":"oriol_roca@iticbcn.cat", "curs":"DAW i DAM"},
@@ -42,18 +42,12 @@ def index(request):
     template = loader.get_template('index_centre.html')   
     return HttpResponse(template.render())
 
-def alumnos(request):
-    
-    context = {'alumnos': alum}
+def alumnos(request):    
+    context = {'alumnos': alum} #accede a la variable global
     return render(request, 'alum.html', context)
 
 def profes(request):
-    # profes = [{"id":"1", "name":"Roger","surname":"Sobrino", "email":"roger.sobrino@iticbcn.cat", "curs":"DAW i DAM"},
-    #           {"id":"2", "name":"Juanma","surname":"Sanchez", "email":"juanma.sanchez@iticbcn.cat", "curs":"DAW i DAM"},
-    #           {"id":"3", "name":"Xavi","surname":"Sobrino", "email":"xavi_quesada@iticbcn.cat", "curs":"DAW i DAM"},
-    #           {"id":"4", "name":"Oriol","surname":"Sobrino", "email":"oriol_roca@iticbcn.cat", "curs":"DAW i DAM"},
-    #           ]
-    context = {'profes': profes}
+    context = {'profes': prof} #accede a la variable global
     return render(request, 'prof.html', context)
 
 def infoAlumne(request, pk):
@@ -63,3 +57,10 @@ def infoAlumne(request, pk):
             alumno = i
 
     return render(request, 'info_alum.html', {'alumno':alumno})
+
+def infoProfe(request, pk):
+    profe = None
+    for i in prof:
+        if i['id'] == pk:
+            profe = i
+    return render(request, 'info_prof.html', {'profe':profe})

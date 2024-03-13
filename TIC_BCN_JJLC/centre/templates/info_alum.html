@@ -1,13 +1,13 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    {% for alumno in alumnos %}
-        <tr>
-            <td>{{ alumno.id }}</td>
-            <td>{{ alumno.name }}</td>
-            <td>{{ alumno.surname }}</td>
-            <td>{{ alumno.email }}</td>
-        </tr>
-    {% endfor %}
+    <h1>Informació de l'alumne {{ alumno.name }}</h1>
+    <ul>
+        <li>ID: {{ alumno.id }}</li>
+        <li>Nom: {{ alumno.name }}</li>
+        <li>Cognom: {{ alumno.surname }}</li>
+        <li>Email: {{ alumno.email }}</li>
+    </ul>
+    <p><a href="{% url 'alumnes' %}">Tornar enrere</a></p>  
 {% endblock %}
     
