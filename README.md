@@ -25,3 +25,12 @@ Llistat professors
 ![centres/students](TIC_BCN_JJLC/img/profess.png)
 Info professor
 ![centres/students](TIC_BCN_JJLC/img/profe.png)
+
+# Pràctica 2: models
+Afegir la part del model a la pràctica 1 connectant amb un PostgreSQL. Es crea la BBDD desde Django, amb Models (NO a pgAdmin4).
+
+A la base de dades ha d’haver 1 taula amb 6 (mínim id i rol) camps (sense comptar el id ja que es crea automàticament).
+
+## Captura pantalla
+comandes: python manage.py makemgrations | python manage.py migrate
+![Migracio](TIC_BCN_JJLC/img/migrate.png)
