@@ -2,9 +2,9 @@ version: '3.1'
 services:
   db:
     image: postgres:13
-    container_name: database
+    container_name: db
     environment:  
-      - POSTGRES_DB=postgresM7
+      - POSTGRES_DB=postgres7
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=postgresuser
     ports:
