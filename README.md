@@ -15,6 +15,8 @@
     Només la pàgina principal (del projecte) ha de renderitzar també un header. Aquest header sempre es mostrarà (independentment de si està mostrant dades de professorat o d’alumnat).
 
 ## Captures pantalla
+[Video](https://drive.google.com/file/d/1jIkzvrFWLZFM-BKOpgkM8RROPbVAOziy/view?usp=drive_link)
+
 Llistat alumnes
 ![centres/students](TIC_BCN_JJLC/img/alumnes.png)
 Info alumne
