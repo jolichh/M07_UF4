@@ -34,3 +34,4 @@ A la base de dades ha d’haver 1 taula amb 6 (mínim id i rol) camps (sense com
 ## Captura pantalla
 comandes: python manage.py makemgrations | python manage.py migrate
 ![Migracio](TIC_BCN_JJLC/img/migrate.png)
+![Models](TIC_BCN_JJLC/img/models.png)
