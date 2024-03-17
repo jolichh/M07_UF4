@@ -12,7 +12,7 @@ alum = [{"id":"1","name":"Joana","surname":"Lin", "email":"2023_joana.lin@iticbc
             {"id":"9","name":"Junhong","surname":"Zhu", "email":"2023_junhong.zhu@iticbcn.cat"},
             {"id":"10","name":"Anxo","surname":"Aragundi", "email":"2023_anxo.aragundi@iticbcn.cat"},
             {"id":"11","name":"Carlos andres","surname":"Zambrano", "email":"2023_carlos.zambrano@iticbcn.cat"},
-            {"id":"12","name":"Facundo Calixto","Barrios":"Perez", "email":"2023_facundo.barrios@iticbcn.cat"},
+            {"id":"12","name":"Facundo Calixto","surname":"Barrios", "email":"2023_facundo.barrios@iticbcn.cat"},
             {"id":"13","name":"Joel","surname":"Ghanem", "email":"2023_joel.ghanem@iticbcn.cat"},
             {"id":"14","name":"Angelo","surname":"Montenegro", "email":"2023_angelo.montenegro@iticbcn.cat"},
             {"id":"15","name":"Angel","surname":"Ivanov", "email":"2023_angel.ivanov@iticbcn.cat"},
@@ -22,8 +22,8 @@ alum = [{"id":"1","name":"Joana","surname":"Lin", "email":"2023_joana.lin@iticbc
 
 prof = [{"id":"1", "name":"Roger","surname":"Sobrino", "email":"roger.sobrino@iticbcn.cat", "curs":"DAW i DAM"},
               {"id":"2", "name":"Juanma","surname":"Sanchez", "email":"juanma.sanchez@iticbcn.cat", "curs":"DAW i DAM"},
-              {"id":"3", "name":"Xavi","surname":"Sobrino", "email":"xavi_quesada@iticbcn.cat", "curs":"DAW i DAM"},
-              {"id":"4", "name":"Oriol","surname":"Sobrino", "email":"oriol_roca@iticbcn.cat", "curs":"DAW i DAM"},
+              {"id":"3", "name":"Xavi","surname":"Quesada", "email":"xavi.quesada@iticbcn.cat", "curs":"DAW i DAM"},
+              {"id":"4", "name":"Oriol","surname":"Roca", "email":"oriol.roca@iticbcn.cat", "curs":"DAW i DAM"},
             ]
 
 # Create your views here.
