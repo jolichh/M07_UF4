@@ -1,8 +1,8 @@
 from django.db import models
 
 # Create your models here.
-class Person(models.Model):
-    first_Name = models.CharField(max_length=100)
+# class Person(models.Model):
+#     first_Name = models.CharField(max_length=100)
 
 # class Alumno(models.Model):
 #     id = models.AutoField(primary_key=True)

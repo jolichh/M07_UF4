@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('name', models.CharField(max_length=100)),
                 ('surname', models.CharField(max_length=100)),
+                ('surname2', models.CharField(max_length=100)),
                 ('email', models.EmailField(max_length=254)),
                 ('curs', models.CharField(max_length=100)),
                 ('rol', models.CharField(choices=[('a', 'Alumne'), ('p', 'Professor')], max_length=100)),
