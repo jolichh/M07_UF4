@@ -32,7 +32,13 @@ Afegir la part del model a la pràctica 1 connectant amb un PostgreSQL. Es crea 
 A la base de dades ha d’haver 1 taula amb 6 (mínim id i rol) camps (sense comptar el id ja que es crea automàticament).
 
 ## Captura pantalla
+[Video](https://drive.google.com/file/d/1gsQxlekg3KyRQSXjvlsIuMHRu8xVV-RX/view?usp=drive_link)
+
 comandes: python manage.py makemgrations | python manage.py migrate
+
+Migració
 ![Migracio](TIC_BCN_JJLC/img/migrate.png)
+Models
 ![Models](TIC_BCN_JJLC/img/models.png)
+Taula
 ![Tablas](TIC_BCN_JJLC/img/tablas.png)
