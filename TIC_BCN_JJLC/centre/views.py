@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Context, loader 
+from .form import FormularioUsers
 
 alum = [{"id":"1","name":"Joana","surname":"Lin", "email":"2023_joana.lin@iticbcn.cat"}, 
             {"id":"2","name":"Oriana","surname":"Rojas", "email":"2023_oriana.rojas@iticbcn.cat"},
@@ -64,3 +65,9 @@ def infoProfe(request, pk):
         if i['id'] == pk:
             profe = i
     return render(request, 'info_prof.html', {'profe':profe})
+
+# form alta usuari
+def formulario(request):
+    form = FormularioUsers()
+    context = {'form':form}
+    return render(request, 'form.html', context)

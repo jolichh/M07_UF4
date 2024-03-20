@@ -53,3 +53,7 @@ El formulari ha de tindre tots els camps de la taula de la BBDD.
 El template del projecte haurà de tindre 2 enllaços (alumnat i professorat) que ja s’han implementat a la pràctica 1, i se li afegirà 1 enllaç més pel formulari. Quan se li doni a l’enllaç del formulari, a sota, s’haurà de renderitzar el formulari. Es podrà utilitzar el formulari fins que se li doni a qualsevol altre enllaç.
 
 ## Captura pantalla
+Amb as_p
+![as_p](TIC_BCN_JJLC/img/form_as_p.png)
+Sense as_p
+![Without as_p](TIC_BCN_JJLC/img/form_noas_p.png)
