@@ -42,3 +42,14 @@ Models
 ![Models](TIC_BCN_JJLC/img/models.png)
 Taula
 ![Tablas](TIC_BCN_JJLC/img/tablas.png)
+
+# Pràctica 3: form
+Crear un formulari (sense funcionalitat) per afegir alumnat i professorat..
+
+S’ha de tindre una BBDD amb els camps necessaris (sense comptar id)
+
+El formulari ha de tindre tots els camps de la taula de la BBDD.
+    
+El template del projecte haurà de tindre 2 enllaços (alumnat i professorat) que ja s’han implementat a la pràctica 1, i se li afegirà 1 enllaç més pel formulari. Quan se li doni a l’enllaç del formulari, a sota, s’haurà de renderitzar el formulari. Es podrà utilitzar el formulari fins que se li doni a qualsevol altre enllaç.
+
+## Captura pantalla
