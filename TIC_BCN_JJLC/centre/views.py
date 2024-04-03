@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.template import Context, loader 
 from .form import FormularioUsers
@@ -67,7 +67,24 @@ def infoProfe(request, pk):
     return render(request, 'info_prof.html', {'profe':profe})
 
 # form alta usuari
-def formulario(request):
+def formulario(request):    #create
     form = FormularioUsers()
+
+    if request.method == 'POST':
+        # pasar los datos del formulario
+        form = FormularioUsers(request.POST)
+        if form.is_valid():
+            form.save()
+            
+            # redirigiar al template para mostrar los datos
+            rol = form.cleaned_data.get('rol')
+            if rol == 'p':
+                return redirect('profes')
+            elif rol == 'a':
+                return redirect('alumnes')
+
+
+    # volver a cargar formulario
     context = {'form':form}
     return render(request, 'form.html', context)
+

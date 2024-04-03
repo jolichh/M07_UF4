@@ -57,3 +57,12 @@ Amb as_p
 ![as_p](TIC_BCN_JJLC/img/form_as_p.png)
 Sense as_p
 ![Without as_p](TIC_BCN_JJLC/img/form_noas_p.png)
+
+# Pràctica 4: CRUD
+Crear el CRUD del vostre projecte. Penseu que el formulari (no funcional) ja el teniu creat de la pràctica anterior, només cal afegir-li la funcionalitat.
+
+És OBLIGATORI fer un commit per a cada element del CRUD creat. És a dir, una vegada tingueu funcional el Create, fer un commit de missatge “Create acabat”. I així amb el Read, Update i Delete.
+
+En cas d’haver de modificar algún error d’un commit anterior (per exemple del Create), posar de missatge “modificació Create”. 
+
+## Captures pantalla
