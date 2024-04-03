@@ -66,3 +66,8 @@ Crear el CRUD del vostre projecte. Penseu que el formulari (no funcional) ja el 
 En cas d’haver de modificar algún error d’un commit anterior (per exemple del Create), posar de missatge “modificació Create”. 
 
 ## Captures pantalla
+
+Abans de crear:
+![inicial](TIC_BCN_JJLC/img/inicial.png)
+Crear:
+![create](TIC_BCN_JJLC/img/crear.png)
