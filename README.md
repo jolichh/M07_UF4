@@ -74,3 +74,5 @@ Crear:
 Read:
 ![read alumnos](TIC_BCN_JJLC/img/read-alum.png)
 ![read profesores](TIC_BCN_JJLC/img/read-profes.png)
+Update:
+![read profesores](TIC_BCN_JJLC/img/update.png)
