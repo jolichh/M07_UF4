@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.http import HttpResponse
 from django.template import Context, loader 
 from .form import FormularioUsers
@@ -88,3 +88,15 @@ def formulario(request):    #create
     context = {'form':form}
     return render(request, 'form.html', context)
 
+def actualizar_user(request, pk):
+    usuario = get_object_or_404(User, id=pk)
+    form = FormularioUsers(instance=usuario)
+
+    if request.method == 'POST':
+        form = FormularioUsers(request.POST, instance=usuario)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        
+    context = {'form':form}
+    return render(request, 'form.html', context)

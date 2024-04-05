@@ -27,6 +27,7 @@
                     <td>{{ alumno.surname }}</td>
                     <td>{{ alumno.email }}</td>
                     <td><a href="{% url 'info_alum' alumno.id %}">ver datos</a></td>
+                    <td><a href="{% url 'update' alumno.id %}">update</a></td>
                 </tr>
             {% endfor %}
         </tbody>
