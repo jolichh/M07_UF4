@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.template import Context, loader 
 from .form import FormularioUsers
+from .models import User
 
 alum = [{"id":"1","name":"Joana","surname":"Lin", "email":"2023_joana.lin@iticbcn.cat"}, 
             {"id":"2","name":"Oriana","surname":"Rojas", "email":"2023_oriana.rojas@iticbcn.cat"},
@@ -43,8 +44,11 @@ def index(request):
     template = loader.get_template('index_centre.html')   
     return HttpResponse(template.render())
 
+# def alumnos(request):    
+#     context = {'alumnos': alum} #accede a la variable global
+#     return render(request, 'alum.html', context)
 def alumnos(request):    
-    context = {'alumnos': alum} #accede a la variable global
+    context = {'alumnos': User.objects.all()} #accede a la base de datos de este modelo
     return render(request, 'alum.html', context)
 
 def profes(request):
