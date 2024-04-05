@@ -1,0 +1,11 @@
+{% extends 'index_centre.html' %}
+
+{% block content %}
+<h1>Eliminar usuario</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Seguro quieres eliminar a "{{ object.name}}" ?? </p>
+    <button><a style="text-decoration: none" href="{% url 'index' %}">Volver a inicio</a></button>
+    <input type="submit" value="Confirmar">
+</form>
+{% endblock %}

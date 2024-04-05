@@ -100,3 +100,13 @@ def actualizar_user(request, pk):
         
     context = {'form':form}
     return render(request, 'form.html', context)
+
+def delete_user(request, pk):
+    usuario = User.objects.get(id=pk)
+
+    if request.method == 'POST':
+        usuario.delete()
+        return redirect('index')
+    
+    context = {'object':usuario}
+    return render(request, 'delete_object.html', context)

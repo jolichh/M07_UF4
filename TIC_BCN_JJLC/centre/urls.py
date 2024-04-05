@@ -10,5 +10,6 @@ urlpatterns = [
     path('profes/info/<str:pk>/', views.infoProfe, name="info_prof"),
     
     path('form/', views.formulario, name="form"),
-    path('update/<str:pk>', views.actualizar_user, name="update")
+    path('update/<str:pk>', views.actualizar_user, name="update"),
+    path('delete/<str:pk>', views.delete_user, name='delete')
 ]
