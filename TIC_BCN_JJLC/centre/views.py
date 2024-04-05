@@ -44,29 +44,29 @@ def index(request):
     template = loader.get_template('index_centre.html')   
     return HttpResponse(template.render())
 
-# muestra todos los alumnos
+# muestra todos los alumnos (read)
 def alumnos(request):    
     alumnos = User.objects.filter(rol='a')#accede a la base de datos de este modelo filtrando por rol
     context = {'alumnos': alumnos} 
     return render(request, 'alum.html', context)
 
-# muestra todos los profesores
+# muestra todos los profesores (read)
 def profes(request):
     profes = User.objects.filter(rol='p') #accede a la base de datos filtrando por rol
     context = {'profes': profes} 
     return render(request, 'prof.html', context)
 
-# información sobre un alumno
+# información sobre un alumno (read)
 def infoAlumne(request, pk):
     alumno = User.objects.get(id=pk) # obtendrá aquel id que sea igual al pk 
     return render(request, 'info_alum.html', {'alumno':alumno})
 
-# información sobre un profesor
+# información sobre un profesor (read)
 def infoProfe(request, pk):
     profe = User.objects.get(id=pk) # obtendrá aquel id que sea igual al pk 
     return render(request, 'info_prof.html', {'profe':profe})
 
-# form alta usuari
+# form alta usuari (create)
 def formulario(request):    #create
     form = FormularioUsers()
 
