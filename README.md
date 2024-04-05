@@ -76,3 +76,5 @@ Read:
 ![read profesores](TIC_BCN_JJLC/img/read-profes.png)
 Update:
 ![read profesores](TIC_BCN_JJLC/img/update.png)
+Delete:
+![read profesores](TIC_BCN_JJLC/img/delete.png)
