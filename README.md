@@ -71,3 +71,6 @@ Abans de crear:
 ![inicial](TIC_BCN_JJLC/img/inicial.png)
 Crear:
 ![create](TIC_BCN_JJLC/img/crear.png)
+Read:
+![read alumnos](TIC_BCN_JJLC/img/read-alum.png)
+![read profesores](TIC_BCN_JJLC/img/read-profes.png)
