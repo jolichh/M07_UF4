@@ -21,6 +21,9 @@
                 <td>{{ profe.email }}</td>
                 <td>{{ profe.curs }}</td>
                 <td><a href="{% url 'info_prof' profe.id %}">ver datos</a></td>
+                
+                <td><a href="{% url 'update' profe.id %}">update</a></td>
+                <td><a href="{% url 'delete' profe.id %}">delete</a></td>
             </tr>
         {% endfor %}
     </tbody>
