@@ -9,7 +9,13 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.p-header {
+    margin: 0px 5px;
+}
 /* body content */
 /* .content {
     display: flex;
