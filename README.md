@@ -66,6 +66,7 @@ Crear el CRUD del vostre projecte. Penseu que el formulari (no funcional) ja el 
 En cas d’haver de modificar algún error d’un commit anterior (per exemple del Create), posar de missatge “modificació Create”. 
 
 ## Captures pantalla
+[Video](https://docs.google.com/document/d/1AAZEJCz4F1-4_VFHn2RpRTzUYUtxLGdJnum70DLJvJg/edit?usp=sharing)
 
 Abans de crear:
 ![inicial](TIC_BCN_JJLC/img/inicial.png)
@@ -75,6 +76,6 @@ Read:
 ![read alumnos](TIC_BCN_JJLC/img/read-alum.png)
 ![read profesores](TIC_BCN_JJLC/img/read-profes.png)
 Update:
-![read profesores](TIC_BCN_JJLC/img/update.png)
+![update](TIC_BCN_JJLC/img/update.png)
 Delete:
-![read profesores](TIC_BCN_JJLC/img/delete.png)
+![delete](TIC_BCN_JJLC/img/delete.png)
